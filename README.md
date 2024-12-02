@@ -21,6 +21,8 @@ Mean Absolute Error (MAE): 0.33
 
 Root Mean Squared Error (RMSE): 0.39
 
+![Untitled](https://github.com/user-attachments/assets/12c4c977-4836-4bf3-b957-5c4984cf3330)
+
 | Feature            | Coefficient |
 |--------------------|-------------|
 | Tariff_Rates       | 0.617047    |
@@ -32,7 +34,7 @@ Root Mean Squared Error (RMSE): 0.39
 | Avg_Temperature    | -0.019930   |
 | Went_Out           | -0.147944   |
 
-![Untitled](https://github.com/user-attachments/assets/12c4c977-4836-4bf3-b957-5c4984cf3330)
+
 
 
 ### Linear Regression (29 Lines of Historical Data)

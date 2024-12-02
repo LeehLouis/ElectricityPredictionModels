@@ -11,7 +11,30 @@ ERA-5 Land Daily retrieved using Google Earth Engine
 
 ## The results of modelling:
 
-### Linear Regression
+### Linear Regression (35 Lines of Historical Data)
+
+By using more data values, the MAE and RMSE have decreased a lot.
+
+Model Performance with Normalized Data and Day Encoding:
+Mean Absolute Error (MAE): 0.33
+Root Mean Squared Error (RMSE): 0.39
+
+| Feature            | Coefficient |
+|--------------------|-------------|
+| Tariff_Rates       | 0.617047    |
+| People_at_Home     | 0.138632    |
+| Time_Out           | 0.075371    |
+| Fans_in_Use        | 0.045280    |
+| daily_rainfall     | 0.033366    |
+| Day                | 0.008618    |
+| Avg_Temperature    | -0.019930   |
+| Went_Out           | -0.147944   |
+
+![Untitled](https://github.com/user-attachments/assets/12c4c977-4836-4bf3-b957-5c4984cf3330)
+
+
+### Linear Regression (29 Lines of Historical Data)
+
 Model Performance with Normalized Data and Day Encoding:
 Mean Absolute Error (MAE): 0.53
 Root Mean Squared Error (RMSE): 0.56
@@ -50,6 +73,19 @@ Root Mean Squared Error (RMSE): 0.34
 | Went_Out         | -0.106671    |
 
 ## Current Project Limitations
+2/12/2024 Revision
+Updated to 35 Lines of Historical Data
+By adding another 6 lines of data, the model improved from:
+
+MAE: 0.53
+RMSE: 0.56
+
+To: 
+
+MAE: 0.33
+RMSE: 0.39
+
+
 MyTNB only provides the most recent 29 days of daily usage data, this restricts the model to only having the most recent daily data to be processed.
 
 Another significant limitation related to data availability is associated with ERA5-Land data. The most recent data is consistently delayed by five days relative to the current date, as it requires pre-processing by Copernicus.

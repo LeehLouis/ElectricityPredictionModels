@@ -1,7 +1,7 @@
 # Electricity Prediction Models
 This project aims to predict the usage of electricity based on the daily data extracted from MyTNB.
 
-The features used in the models were of the data recorded throughout a 29 day period.
+The features used in the models were of the data recorded throughout 29 days period and 35 days period.
 
 
 ## The data sources are:
